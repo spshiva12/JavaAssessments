@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 public class FileReadWriteAppend {
 
+	/**
+     * The main method displays a menu with options to list files in ascending order,
+     * perform business-level file operations, or exit the program.
+     */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int choice = 0;
@@ -39,6 +43,9 @@ public class FileReadWriteAppend {
 		}
 	}
 
+	 /**
+     * The listFiles method lists all the files in the current directory in ascending order.
+     */
 	public static void listFiles() {
 		File directory = new File(".");
 		File[] fileList = directory.listFiles();
@@ -51,6 +58,10 @@ public class FileReadWriteAppend {
 		}
 	}
 
+	/**
+     * The businessOperations method displays a sub-menu with options to create, remove,
+     * search for files, or return to the main menu.
+     */
 	public static void businessOperations() {
 		Scanner sc = new Scanner(System.in);
 		int choice = 0;
@@ -83,6 +94,10 @@ public class FileReadWriteAppend {
 		}
 	}
 
+
+    /**
+     * The createFile method prompts the user for a file name and creates a new file with that name.
+     */
 	public static void createFile() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your file name:");
@@ -103,7 +118,10 @@ public class FileReadWriteAppend {
 		}
 
 	}
-
+	
+	 /**
+     * The removeFile method prompts the user for a file name and removes the file with that name.
+     */
 	public static void removeFile() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your file name:");
@@ -117,6 +135,9 @@ public class FileReadWriteAppend {
 		}
 	}
 
+	 /**
+     * The searchFile method prompts the user for a file name and searches for a file with that name.
+     */
 	public static void searchFile() {
 
 		Scanner sc = new Scanner(System.in);

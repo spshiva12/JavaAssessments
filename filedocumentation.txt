@@ -1,0 +1,38 @@
+This Program demonstrates how to read , write, and append to file in java,
+ and provides menu with options to list in files in ascending order  or perform
+business-level file opeerations such as creating, removing, and searching for files.
+
+The main method dislays amenu with options to list files in ascending order,
+perform business-level file operations, or exit the program
+
+The listFiles method lists all the files in the current directory in ascending order.
+
+The businessOperations method displays a sub-menu with options to create, remove, search for files, or return to the main menu.
+
+The createFile method prompts the user for a file name and creates a new file with that name.
+  
+The removeFile method prompts the user for a file name and removes the file with that name.
+
+The searchFile method prompts the user for a file name and searches for a file with that name.
+
+If the file is found, its name is printed to the console. If the file is not found,
+a message is printed to the console indicating that the file was not found.
+
+
+In the above program, we have used the following Java concepts:
+
+Scanner class: This is used to read input from the user via the command line interface.
+File class: This is used to represent files and directories in the file system.
+Array class: This is used to manipulate arrays of files returned by the listFiles method of the File class.
+System class: This is used to exit the program with a status code using the exit method.
+switch statement: This is used to execute a block of code based on the value of a variable (choice in this case).
+while loop: This is used to repeatedly display the menu and handle user input until the user chooses to exit the program.
+try-catch block: This is used to handle exceptions that may occur when creating a file using the createNewFile method.
+if-else statement: This is used to check if a file exists using the exists method, or to check if a file was successfully deleted using the delete method.
+for-each loop: This is used to iterate over an array of files returned by the listFiles method.
+In addition, the program uses concepts covered in the Java I/O Streams and File I/O sections of the Java Tutorials (docs.oracle.com), including:
+
+Reading and writing to files using the FileReader, FileWriter, BufferedReader, and BufferedWriter classes.
+Checking if a file is a regular file using the isFile method of the File class.
+Random access files using the RandomAccessFile class.
+Serialization and deserialization of objects using the ObjectOutputStream and ObjectInputStream classes.
